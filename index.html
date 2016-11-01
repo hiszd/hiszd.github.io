@@ -2,7 +2,7 @@
 <head>
 <style type="text/css">
   body {
-  	background-image: url("bg1.png");
+  	background-image: url("bg2.png");
   }
   #body {
   	width: 60%;
@@ -14,11 +14,18 @@
 	color: white;
   	text-align: center;
   }
+  #hw {
+  	padding-bottom: 10%;
+  }
 </style>
 </head>
 <body style="">
   <div id="body">
-	<h1>Hello world!</h1>
+	<h1 id="hw">Hello world!</h1>
+	<form action="submit.php" method="post">
+	  Name: <input type="text" name="name" /><br />
+	  <input type="submit" value="Submit" />
+	</form>
   </div>
 </body>
 </html>
