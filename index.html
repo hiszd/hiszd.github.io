@@ -4,10 +4,10 @@
 <script type="text/javascript">
 $(document).ready(function() {
   $("#left").click(function() {
-    alert("Left");
+    window.location.replace("request.html");
   });
   $("#center").click(function() {
-    alert("Center");
+    window.location.replace("schedule.html");
   });
   $("#right").click(function() {
     window.location.replace("hire.html");
@@ -21,7 +21,7 @@ $(document).ready(function() {
   #left {
   	margin-top: 5%;
   	float: left;
-  	width: 30%;
+  	width: 50%;
   	height: 60%;
   }
   #center {
@@ -35,7 +35,7 @@ $(document).ready(function() {
   	text-align: right;
   	margin-top: 5%;
   	float: right;
-  	width: 30%;
+  	width: 50%;
   	height: 60%;
   }
   #body {
@@ -66,8 +66,7 @@ $(document).ready(function() {
 <body style="">
   <div id="head">
   <div id="left"><h1 id="l1">Request Off</h1></div>
-  <div id="center"><h1>Schedule</h1></div>
-  <div id="right"><h1>Orientation</h1></div>
+  <div id="right"><h1 id="bob">Orientation/Change Avail.</h1></div>
   <div id="clearfix"></div>
   </div>
   <div id="body">
