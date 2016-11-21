@@ -1,7 +1,13 @@
 <html>
 <head>
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+	$("#chip").click( function() {
+		window.location.replace("index.html");
+	});
+});
+</script>
 <style type="text/css">
   body {
   	background-image: url("bg2.png");
@@ -37,7 +43,7 @@
 </head>
 <body style="">
   <div id="body">
-	<h1 id="hw">Welcome to Chipotle!</h1>
+	<h1 id="hw">Welcome to <span id="chip">Chipotle!</span></h1>
 	<form action="https://formspree.io/hiszd1@gmail.com" method="post">
 	  Name: <input type="text" name="name" /><br />
 	  Email : <input type="email" name="_replyto" /><br />
@@ -47,6 +53,7 @@
 	  <div id="ms"><textarea name="message"></textarea></div>
 	  <div id="clearfix"></div>
 	  </div>
+	  Number of hours to work: <input type="number" name="hours" min="1" max="40" /> <br />
 	  <input type="submit" value="Submit" />
 	</form>
   </div>
